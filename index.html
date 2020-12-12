@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<link rel="stylesheet" href="./css/denglu.css">
+	</head>
+	<body>
+		<video id="v1" autoplay muted loop style="width: 100%" >
+		    <source  src="mp4/Ufo%20-%2040604.mp4">
+		</video>
+		
+		<form action="" method="">
+			<div id="Nav">
+				<ul>
+					<li>
+						账号：<input   type="text" name="" id="z" value="" />
+					</li>
+					<li>
+						密码：<input   type="password" name="" id="m" value="" />
+					</li>
+				</ul>
+				
+				<p>
+					<a href="#" target="_top" id="a"><input id="logins" onclick="login()" type="button" name=""  value="登录" /></a>
+				</p>
+			
+			</div>
+		</form>
+		
+		<script type="text/javascript">
+			function login(){
+				var z=document.getElementById('z').value;
+				console.log(z);
+				var m=document.getElementById('m').value;
+				console.log(m);
+				var a=document.getElementById('a');
+				if(z=='阿威'&&m=='123456'){
+					alert("true");
+					a.href='./dd.html';
+				}else{
+					alert("false");
+				}
+			
+			}
+		</script>
+	
+	</body>
+</html>
